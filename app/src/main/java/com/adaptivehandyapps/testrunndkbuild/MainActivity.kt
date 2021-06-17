@@ -9,6 +9,7 @@ import java.io.InputStreamReader
 
 //import com.adaptivehandyapps.testrunndkbuild.CWrapper.main
 
+@Suppress("KotlinJniMissingFunction")
 class MainActivity : AppCompatActivity() {
 //    external fun main(): Int
 
@@ -22,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 //        var result = CWrapper.main()
 //        Log.d("TEST", "result -> " + result)
 
+//        /data/user/0/com.adaptivehandyapps.testrunndkbuild
+        executeReaderCommand("/data/user/0/com.adaptivehandyapps.testrunndkbuild/main.out") // permission denied
 //        executeReaderCommand("/storage/emulated/0/Download/main.out") // permission denied
 //        executeReaderCommand("/data/local/tmp/main.out") // permission denied
 //        executeCommand("/data/local/tmp/main.out") // permission denied
